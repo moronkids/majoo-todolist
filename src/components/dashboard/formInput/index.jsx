@@ -116,7 +116,11 @@ function Index(props) {
             <button
               type="submit"
               onClick={(e) => formik.handleSubmit(e)}
-              className="btn-submit my-3 float-right rounded bg-primary text-white border-0 px-3 py-2"
+              className="btn-submit my-3 float-right text-white border-0 px-5 py-2"
+              style={{
+                background: "#6666DA",
+                borderRadius: "20px",
+              }}
             >
               {!props.full ? "Submit" : "Update"}
             </button>
