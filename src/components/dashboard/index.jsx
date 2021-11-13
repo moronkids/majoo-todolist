@@ -20,7 +20,7 @@ function Index() {
   return (
     <>
       {__popUp && <PopUp />}
-      <div className="mj-dashboard py-5">
+      <div className="mj-dashboard py-sm-5 py-2 mb-sm-0 mb-4">
         <FormInput list={data} />
         <div className="mj-list-done border-1 container d-lg-flex d-block m-auto justify-content-center px-3 ">
           <ListUnDone data={data} />

@@ -36,7 +36,7 @@ function Index({ data }) {
           return (
             <div className="row col-12 border border-top-0 py-2 m-0 ">
               <div className="col-1 pl-1 text-secondary my-auto">{i + 1}</div>
-              <div className="col-7 p-0 text-secondary my-auto">
+              <div className="col-7 p-0 text-secondary my-auto text-truncate">
                 {val.title}
               </div>
               <div className="d-flex justify-content-center align-items-center col-4 p-0 text-secondary my-auto text-center">

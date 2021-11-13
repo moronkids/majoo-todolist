@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { HIT_ADD_LIST } from "redux/actions";
 import { NOW } from "helpers/createdAt";
 import { Hooks } from "providers";
+import Logo from "assets/img/majoo.png";
 function Index(props) {
   const { __popUp, set__popUp, set__popUpData, __popUpData } =
     useContext(Hooks);
@@ -50,10 +51,19 @@ function Index(props) {
 
   return (
     <div className="mj-form-input container">
+      <div className="img d-flex mx-auto w-100 justify-content-center align-items-center pb-sm-0 pb-4">
+        <img
+          src={Logo}
+          width="70px"
+          height="70px"
+          alt=""
+          className="text-center"
+        />
+      </div>
       <div className="title">
-        <h2 className="font-weight-bold">
-          {props.full ? "Edit Todo List" : "Majoo - Todo List"}
-        </h2>
+        <h4 className="font-weight-bold text-sm-left text-center">
+          {props.full ? "Edit Todo List" : "Todo List App"}
+        </h4>
       </div>
       <div>
         <form onSubmit={formik.handleSubmit}>
