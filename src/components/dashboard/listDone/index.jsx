@@ -30,7 +30,7 @@ function Index({ data }) {
         <div className="row col-12 border py-2 m-0 ">
           <div className="col-1 p-0 font-weight-bold">No</div>
           <div className="col-8 p-0 font-weight-bold">Name</div>
-          <div className="col-3 p-0 font-weight-bold text-center">Action</div>
+          <div className="col-3 p-0 font-weight-bold text-right">Action</div>
         </div>
         {done?.map((val, i) => {
           return (
@@ -39,7 +39,7 @@ function Index({ data }) {
               <div className="col-7 p-0 text-secondary my-auto text-truncate">
                 {val.title}
               </div>
-              <div className="d-flex justify-content-center align-items-center col-4 p-0 text-secondary my-auto text-center">
+              <div className="d-flex justify-content-end align-items-center col-4 justify-content-end p-0 text-secondary my-auto text-center">
                 <div
                   onClick={() =>
                     handlePopUp({
