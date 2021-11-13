@@ -1,0 +1,6 @@
+.mj-dashboard {
+    @import "listDone/listDone", "listUnDone/listUnDone", "formInput/formInput";
+    .error {
+        font-size: 12px;
+    }
+}

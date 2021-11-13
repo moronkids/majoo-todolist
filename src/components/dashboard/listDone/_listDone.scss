@@ -1,0 +1,13 @@
+.mj-list-done {
+    gap: 10px;
+    .table-list {
+        background-color: rgb(102, 102, 218);
+        height: 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .table-list-not {
+        @extend .table-list;
+        background-color: rgb(179, 179, 179);
+    }
+}
